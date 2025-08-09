@@ -63,7 +63,7 @@ workEls.forEach((workEl) => {
 const switchThemeEl = document.querySelector('input[type="checkbox"]');
 const storedTheme = localStorage.getItem("theme");
 
-switchThemeEl.checked = storedTheme === "dark" || storedTheme === null;
+switchThemeEl.checked = storedTheme === "Light" || storedTheme === null;
 
 switchThemeEl.addEventListener("click", () => {
   const isChecked = switchThemeEl.checked;
