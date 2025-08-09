@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="description"
+      content="Portfolio of David Ruiz Luengo - Junior Technical Artist specialized in game development tools, shaders, and VFX."
+    />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Luengox Portfolio">
+    <meta itemprop="description" content="Portfolio of David Ruiz Luengo - Junior Technical Artist">
+    <meta itemprop="image" content="assets/images/sharing-card.png">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://luengox-portfolio.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Luengox | Technical Artist Portfolio">
+    <meta property="og:description" content="Portfolio of David Ruiz Luengo - Junior Technical Artist specialized in game development tools, shaders, and VFX.">
+    <meta property="og:image" content="assets/images/sharing-card.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Luengox Portfolio">
+    <meta name="twitter:description" content="Portfolio of David Ruiz Luengo - Junior Technical Artist">
+    <meta name="twitter:image" content="assets/images/sharing-card.png">
+
+    <link rel="shortcut icon" href="assets/images/favicons.png" type="image/png" />
+    <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Luengox | Technical Artist Portfolio</title>
+  </head>
+
+  <body>
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button" class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+		  <li class="nav-item"><a href="#formation">Education</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#experience">Experience</a></li>
+          <li class="nav-item"><a href="#skills">ToolKit</a></li>
+          <li class="nav-item"><a href="#jams">GameJams</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <h3 class="h3">
+            <span>Hi, I'm David Ruiz Luengo</span>
+          </h3>
+          <h1 class="h1">
+            <span>Junior Technical Artist</span>
+          </h1>
+
+          <p class="header-text">
+            Specialized in procedural tools, shaders, VFX and 3D Characters. 
+            Passionate about bridging the gap between art and programming 
+            to create immersive gaming experiences.
+          </p>
+
+          <div class="header-btns">
+            <a href="assets/documents/DavidRuizLuengo_CV_2025.pdf" download="DavidRuizLuengo_CV_2025.pdf" class="btn btn-cta">Download CV</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Formation Section - Horizontal Boxes -->
+      <section class="formation" id="formation">
+        <div class="container">
+          <h1 class="title-section">EDUCATION</h1>
+		  
+		  <div class="education-container">
+				
+			  <!-- Education Box 1 -->
+			  <a href="https://www.digipen.es/" target="_blank" class="education-link">
+				<div class="experience-box">
+					<div class="experience-header">
+						<div class="experience-logo">
+							<img loading="lazy" src="assets/images/education/DigiPen.png" alt="Digipen" />
+						</div>
+						<div class="experience-title-container">
+							<div class="experience-title-row">
+								<h3 class="h3">Art and Animation, 2D and 3D - Summer Workshop</h3>
+							</div>
+							<p class="formation-institution">DigiPen Europe | Bilbao</p>
+							<p class="experience-meta">2019</p>	
+						</div>
+					</div>
+				</div>
+				</a>
+               <!-- Education Box 2 -->
+			  <a href="https://www.citm.upc.edu/" target="_blank" class="education-link">			   
+				<div class="experience-box">  
+					<div class="experience-header">
+						<div class="experience-logo">
+							<img loading="lazy" src="assets/images/education/Upc.png" alt="upc" />
+						</div>
+						<div class="experience-title-container">
+							<div class="experience-title-row">
+								<h3 class="h3">Bachelor's Degree in Video Game Design and Development</h3>
+							</div>
+							<p class="formation-institution">Universidad Politécnica de Cataluña | UPC (CITM)</p>
+							<p class="experience-meta">2021 - 2025</p>	
+						</div>
+					</div> 
+				</div>
+				</a>
+				<!-- Education Box 3 -->
+			  <a href="https://haz.institutortve.com/" target="_blank" class="education-link">				
+				<div class="experience-box">  
+					<div class="experience-header">
+						<div class="experience-logo">
+							<img loading="lazy" src="assets/images/education/Rtve.png" alt="rtve" />
+						</div>
+						<div class="experience-title-container">
+							<div class="experience-title-row">
+								<h3 class="h3">Advanced Virtual Production with Simulcam and Unreal Engine (5th Edition) - Certified course</h3>
+							</div>
+							<p class="formation-institution">RTVE Institute</p>
+							<p class="experience-meta">2025</p>	
+						</div>
+					</div> 
+				</div>
+				</a>
+				
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section - Organized by Categories -->
+      <section class="projects" id="projects">
+        <div class="container">
+          <h1 class="title-section">PROJECTS</h1>
+          
+			 <!-- Tools Category -->
+			 <div class="category-section">
+				<h2 class="h2">Tools</h2>
+				
+				<!-- HDA -->		
+				<div class="work-boxes">
+				  <div class="work-box">
+					<div class="work-textbox">
+					  <h3 class="h3">Procedural Scene Generator for Virtual Production</h3>
+					  <p class="work-text">
+						 Developed a procedural tool in Houdini that generates complete virtual sets in Unreal Engine from a simple editable curve.
+					  </p>
+					  <ol class="work-technologies">
+						<li>Houdini</li>
+						<li>Unreal Engine 5.5</li>
+					  </ol>
+					  <div class="work-links">
+						<a href="https://youtu.be/wB37J6URuWE" target="_blank" rel="noopener" class="link">View Reel</a>
+						<a href="https://youtu.be/wB37J6URuWE" target="_blank" rel="noopener" title="Source code">
+						  <img src="assets/images/social-links/youtube.svg" alt="youtube" loading="lazy" />
+						</a>
+					  </div>
+					</div>
+					<picture class="work-img">
+					  <img loading="lazy" src="assets/images/work/HDA.png" alt="HDA" />
+					</picture>
+				  </div>
+				</div>
+			  
+			</div>
+		</div>
+      </section>
+
+      <!-- Experience Section - Detailed Boxes -->
+      <section class="experience" id="experience">
+        <div class="container">
+          <h1 class="title-section">EXPERIENCE</h1>
+		  
+			<!-- Experience 1 -->
+			<a href="https://www.3cat.cat/3cat/" target="_blank" class="education-link">
+			<div class="experience-box">
+				<!-- Header Section with Logo and Basic Info -->
+				<div class="experience-header">
+					<div class="experience-logo">
+					<img loading="lazy" src="assets/images/experience/3CAT.png" alt="3CAT" />
+					</div>
+					<div class="experience-title-container">
+						<div class="experience-title-row">
+							<h3 class="experience-position">Technical Artist</h3>
+							<span class="experience-type-badge">Service-based Internship</span>
+						</div>
+						<p class="experience-company">3CAT Corp</p>
+						<div class="experience-meta">
+							<span class="experience-duration">
+								<img src="assets/images/icons/calendar.svg" alt="Duration" class="meta-icon">
+								September 2024 - March 2025 (7 months)
+							</span>
+							<span class="experience-location">
+								<img src="assets/images/icons/location.svg" alt="Location" class="meta-icon">
+								On-site / Barcelona, Spain
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Main Content Section -->
+				<div class="experience-content">
+					<!-- Responsibilities Section -->
+					<div class="experience-section">
+						<p> Collaborative university-contract project with 3Cat, focused on developing innovative solutions to promote news consumption among young audiences.</p>
+						
+						<ul class="experience-description">
+							<li class="experience-bullet">
+								<span class="bullet-icon">▹</span>
+								Created a complete immersive experience prototype ready for testing
+							</li>
+							<li class="experience-bullet">
+								<span class="bullet-icon">▹</span>
+								Developed shaders, VFX, and post-processing effects
+							</li>
+							<li class="experience-bullet">
+								<span class="bullet-icon">▹</span>
+								Facilitated collaboration between art and programming departments
+							</li>
+						</ul>
+					</div>
+
+					<!-- Technologies Section -->
+					<div class="experience-section">
+						<h4 class="experience-section-title">
+						   
+							Technologies Used
+						</h4>
+						<div class="experience-tech-tags">
+							<span class="tech-tag">Unity 6</span>
+							<span class="tech-tag">Shader Graph</span>
+							<span class="tech-tag">VR</span>
+							<span class="tech-tag">Maya</span>
+							<span class="tech-tag">Substance Painter</span>
+						</div>
+					</div>			
+				</div>
+			</div>
+			</a>
+			
+		</div>
+		</div>
+	  </section>
+
+      <!-- Skills Section - Updated for Technical Artist -->
+      <section class="skills" id="skills">
+        <div class="container">
+          <h1 class="title-section">TOOLKIT</h1>
+          
+            <!-- Software Skills -->
+            <div class="skills-category">
+              <div class="experience-box">
+                <img src="assets/images/skills/Softwares.png" alt="Unity" class="img" loading="lazy" title="toolkit">
+            
+              </div>
+            </div>
+            
+          
+        </div>
+      </section>
+
+
+	 <!-- GAMEJAMS Section - Updated for Technical Artist -->
+      <section class="jams" id="jams">
+        <div class="container">
+          <h1 class="title-section">GAMEJAMS</h1>
+     
+          
+        </div>
+      </section>
+	  
+	  
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="h2">Get In Touch</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available for opportunities
+              </strong>
+              <p class="contact-text">
+                Interested in working together or have questions about my work? 
+                Feel free to reach out for collaborations, job opportunities, 
+                or just to chat about technical art and game development.
+              </p>
+              
+              <div class="contact-info">
+                <p><strong>Email:</strong> davidruizluengo@gmail.com</p>
+                <p><strong>Location:</strong> Murcia, Spain <span class="relocation-badge">Relocation available</span> </p>
+				 
+              </div>
+            </div>
+            
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required inputmode="email" />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="ArtStation" href="https://www.artstation.com/luengox" target="_blank" rel="noopener">
+                  <img loading="lazy" src="assets/images/social-links/artstation.svg" alt="ArtStation" />
+                </a>
+              </li>
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/xdavido" target="_blank" rel="noopener">
+                  <img loading="lazy" src="assets/images/social-links/github.svg" alt="GitHub" />
+                </a>
+              </li>
+              <li class="footer-link">
+                <a title="LinkedIn" href="https://linkedin.com/in/david-ruiz-luengo-954401239" target="_blank" rel="noopener">
+                  <img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="LinkedIn" />
+                </a>
+              </li>
+              
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> David Ruiz Luengo | Junior Technical Artist
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
