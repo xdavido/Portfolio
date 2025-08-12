@@ -494,6 +494,12 @@ body.light .header {
     url("assets/images/fondo.jpg");
 }
 
+@media (max-width: 768px) {
+  .header {
+    background-attachment: scroll;
+  }
+}
+
 .header-textbox {
   position: absolute;
   top: 50%;
