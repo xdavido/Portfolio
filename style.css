@@ -553,42 +553,36 @@ body.light .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-@media (max-width: 1045px) {
-  .work-boxes {
-    max-inline-size: fit-content;
-    margin-inline: auto;
-  }
-
-  .work-box {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-  }
-
-  .work-img {
-    margin-block-end: var(--gutter-medium);
-  }
-}
-
-.work-box:not(:last-child) {
-  margin-block-end: var(--gutter-huge);
-}
-
-@media (max-width: 1285px) {
-  .work-box:not(:last-child) {
-    margin-block-end: 8rem;
-  }
+  gap: 2rem; /* espacio entre texto y video/imagen para evitar que estén pegados */
+  max-width: 1200px; /* limita el ancho total del contenedor */
+  margin-inline: auto; /* centra el contenedor horizontalmente */
+  padding: 1rem;
 }
 
 .work-img,
 .work-textbox {
   flex-basis: 49%;
+  flex-shrink: 1; /* permite reducirse si es necesario */
+  max-width: 49%; /* no crezca más allá del 49% */
+  min-width: 300px; /* para evitar que se reduzca demasiado, ajusta según tu gusto */
 }
 
 .work-img {
   max-inline-size: 785px;
+  margin-block-end: 2rem;
   transition: 0.6s all;
+  flex: 1; /* igual que el texto para repartir el espacio */
+}
+
+/* Si usas video, asegúrate que responde al flex igual que la imagen */
+.work-img video,
+video.work-img {
+      /* ocupa todo el ancho disponible en su columna */
+  height: auto;      /* mantiene proporción */
+  object-fit: cover; /* recorta sin deformar */
+  max-width: 100%;
+  flex-shrink: 1;    /* permite reducirse si la pantalla es pequeña */
+
 }
 
 body.light .work-img {
@@ -596,8 +590,8 @@ body.light .work-img {
 }
 
 .work-textbox {
-  max-inline-size: 445px;
-}
+   max-inline-size: 445px;
+  flex: 1; /* permite que crezca o se reduzca */}
 
 .work-text {
   margin-block: var(--gutter-micro);
@@ -624,20 +618,33 @@ body.dark .work-links img {
   filter: invert(1);
 }
 
-.work-links > a:last-child {
-  transition: 0.3s transform ease-in;
-}
 
-.work-links > a:last-child:hover,
-.work-links > a:last-child:focus {
+
+.work-links > a:hover,
+.work-links > a:focus {
   transform: scale(1.1);
+    transition: 0.3s transform ease-in;
+
 }
 
-.work-text,
-.work-technologies {
-  font-weight: 300;
+
+@media (max-width: 1045px) {
+  .work-box {
+    flex-direction: column-reverse; /* Imagen abajo, texto arriba */
+      align-items: center;
+    text-align: center;
+  }
 }
 
+@media (max-width: 1045px) {
+  .work-textbox {
+    max-inline-size: 100%;
+    text-align: center; /* opcional, solo si quieres centrar */
+  }
+  .work-text {
+    font-size: clamp(1rem, 2.5vw, 1.25rem); /* tamaño fluido */
+  }
+}
 /* --------------------------------- */
 /* ----- Contact -----*/
 /* --------------------------------- */
@@ -1134,21 +1141,45 @@ body.dark .experience-location .meta-icon {
   background: var(--important);
 }
 
+
 .category-section {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 100%;
-}
-
-.category-section > * {
-  width: 100%;
-  padding: 1rem;
   background: var(--bg-color-secondary);
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: var(--gutter-large);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+
+/* Título dentro de la categoría */
+.category-section > .h2 {
+  text-align: center;
+  margin-top: 0;     /* elimina espacio innecesario */
+  margin-bottom: 2rem;
+}
+
+/* Separación entre proyectos */
+.category-section .work-box {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.category-section .work-box:last-child {
+  border-bottom: none; /* Evita línea en el último */
+}
+
+/* Ajuste responsive para no romper diseño */
+@media (max-width: 768px) {
+  .category-section {
+    padding: 1.5rem;
+  }
+  .category-section .work-box {
+    padding: 1rem 0;
+  }
+}
 .education-link {
     display: block;
     text-decoration: none;
