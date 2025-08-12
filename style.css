@@ -586,10 +586,15 @@ video.work-img {
 }
 
 @media (max-width: 1045px) {
-  .work-img,
+  .work-img,video.work-img,
   .work-textbox {
     max-width: 100%;
-    min-width: unset; /* para evitar límites duros */
+    min-width: auto !important;
+  }
+  .work-img video,
+  video.work-img {
+    width: 100%;
+    height: auto;
   }
 }
 
