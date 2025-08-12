@@ -585,6 +585,14 @@ video.work-img {
 
 }
 
+@media (max-width: 1045px) {
+  .work-img,
+  .work-textbox {
+    max-width: 100%;
+    min-width: unset; /* para evitar límites duros */
+  }
+}
+
 body.light .work-img {
   box-shadow: var(--shadow);
 }
