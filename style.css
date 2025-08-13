@@ -485,13 +485,15 @@ main {
 }
 
 body.dark .header {
-  background-image: linear-gradient(#0000008b, #000000e6),
+  background-image: linear-gradient(#00000050, #000000da),
     url("assets/images/fondo.jpg");
+     background-attachment: scroll;
 }
 
 body.light .header {
-  background-image: linear-gradient(#ffffffa2, #ffffffe6),
+  background-image: linear-gradient(#ffffff34, #ffffffd0),
     url("assets/images/fondo.jpg");
+     background-attachment: scroll;
 }
 
 @media (max-width: 768px) {
@@ -509,7 +511,13 @@ body.light .header {
 .h1 span {
   display: block;
 }
-
+.highlight-name {
+    font-weight: 900; /* Más grueso */
+  text-shadow: 1px 1x 1px rgba(0,0,0,0.5); /* sombra difusa oscura */
+  text-decoration: underline; /* subrayado */
+  text-decoration-thickness: 2px; /* grosor del subrayado */
+  text-underline-offset: 4px; /* separación del subrayado respecto al texto */
+}
 .header-text {
   font-size: var(--text-large);
   font-weight: 400;
