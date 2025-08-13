@@ -522,9 +522,9 @@ body.light .header {
 }
 
 .header-text {
-  font-size: var(--text-large);
+  font-size: var(--text-medium);
   font-weight: 400;
-  max-inline-size: 745px;
+  max-inline-size: 700px;
   margin-block-start: var(--gutter-micro);
   margin-block-end: var(--gutter-medium);
 }
