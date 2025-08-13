@@ -516,7 +516,6 @@ body.light .header {
 
 .highlight-name {
   font-weight: 900; /* Más grueso */
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* sombra difusa oscura */
   text-decoration: underline; /* subrayado */
   text-decoration-thickness: 2px; /* grosor del subrayado */
   text-underline-offset: 4px; /* separación del subrayado respecto al texto */
