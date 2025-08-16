@@ -356,11 +356,11 @@ main {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   background-color: var(--bg-color-primary);
-  transform: translateY(calc(-1 * var(--radius)));
-    position: relative;
+  position: relative;
   z-index: 1;
-  background-color: var(--bg-color-primary);
+  padding-bottom: 4rem; /* 👈 espacio controlado para "respirar" */
 }
+
 
 @media (max-width: 1185px) {
   :root {
@@ -480,19 +480,36 @@ main {
 
 .header {
   min-block-size: calc(100vh + var(--radius));
-  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.header::before {
+  content: "";
+  position: fixed;
+  inset: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
+  z-index: -1;
+  -webkit-mask-image: linear-gradient(black, black);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: top;
+  -webkit-mask-size: 100% calc(100vh + var(--radius));
+  mask-image: linear-gradient(black, black);
+  mask-repeat: no-repeat;
+  mask-position: top;
+  mask-size: 100% calc(100vh + var(--radius));
 }
 
-body.dark .header {
+/* Fondos según modo */
+body.dark .header::before {
   background-image: linear-gradient(#00000050, #000000da),
     url("assets/images/fondo.jpg");
 }
 
-body.light .header {
+body.light .header::before {
   background-image: linear-gradient(#ffffff34, #ffffffd0),
     url("assets/images/fondo.jpg");
 }
@@ -521,6 +538,23 @@ body.light .header {
   max-inline-size: 700px;
   margin-block-start: var(--gutter-micro);
   margin-block-end: var(--gutter-medium);
+  padding: 2rem; /* espacio interno */
+  border-radius: 20px; /* esquinas redondeadas */
+  background: rgba(255, 255, 255, 0.15); /* capa transparente estilo vidrio */
+  backdrop-filter: blur(12px) saturate(150%); /* difuminado y saturación */
+  -webkit-backdrop-filter: blur(12px) saturate(150%); /* soporte Safari */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* borde sutil */
+
+}
+
+body.dark .header-text {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+body.light .header-text {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1200px) {
@@ -840,11 +874,31 @@ body.light .signatures {
 /* --------------------------------- */
 /* ----- Footer -----*/
 /* --------------------------------- */
-
 .footer {
+  position: relative;
+    margin-top: - var(--radius);
+
   border-top: 1px solid var(--border);
   padding-block: var(--gutter-x-large);
+  background: rgba(255, 255, 255, 0.25); /* fondo semitransparente estilo header */
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* borde sutil */
+  z-index: 1;
 }
+
+/* Versión dark */
+body.dark .footer {
+  background: rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Versión light */
+body.light .footer {
+  background: rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 
 .footer-content {
   display: flex;
