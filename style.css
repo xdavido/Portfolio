@@ -1443,3 +1443,16 @@ body.dark .experience-location .meta-icon {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
+
+
+.email-link {
+  color: rgb(255, 0, 0);         /* rosa */
+  text-decoration: none;  /* quita el subrayado */
+}
+
+.email-link:hover {
+  text-decoration: underline; /* opcional: subrayado solo al pasar el ratón */
+  font-weight: bold;      /* negrita */
+
+  color: rgb(255, 0, 0);            /* opcional: un rosa más fuerte al hover */
+}

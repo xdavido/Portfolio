@@ -30,31 +30,28 @@
       const theme = localStorage.getItem("theme") || "light";
       document.body.classList.add(theme);
     </script>
-   <div class="menu-btn-container">
-        <div class="container">
-          <button type="button" class="menu-btn">menu</button>
-        </div>
-      </div>
+	
+ 	 <div class="menu-btn-container">
+		<div class="container">
+		  <button type="button" class="menu-btn">menu</button>
+		</div>
+	  </div>
 	  
 	  <nav class="nav hidden">
-        <ol class="nav-items">
-          <li class="nav-item"><a href="#">Home</a></li>
+		<ol class="nav-items">
+		  <li class="nav-item"><a href="#">Home</a></li>
 		  <li class="nav-item"><a href="#formation">Education</a></li>
-          <li class="nav-item"><a href="#projects">Projects</a></li>
-          <li class="nav-item"><a href="#experience">Experience</a></li>
-          <li class="nav-item"><a href="#skills">ToolKit</a></li>
-          <li class="nav-item"><a href="#jams">GameJams</a></li>
-          <li class="nav-item">
-            <a href="#contact" data-focused="last-focused">Contact</a>
-          </li>
-        </ol>
-      </nav>
+		  <li class="nav-item"><a href="#projects">Projects</a></li>
+		  <li class="nav-item"><a href="#experience">Experience</a></li>
+		  <li class="nav-item"><a href="#skills">ToolKit</a></li>
+		  <li class="nav-item"><a href="#jams">GameJams</a></li>
+		  <li class="nav-item">
+			<a href="#contact" data-focused="last-focused">Contact</a>
+		  </li>
+		</ol>
+	  </nav>
 	  
     <header class="header">
-   
-
-      
-
       <div class="container">
         <div class="header-textbox">
          <h3 class="h3">
@@ -404,7 +401,7 @@ Editable cell cartoon shader made for a Game Jam, featuring dynamic control over
 					<div class="work-textbox">
 					  <h3 class="h3">Unhooked Engine V3</h3>
 					  <p class="work-text">
-Unhooked Engine V3 is the evolution of <a href="https://xdavido.github.io/UnhookedEngine.v2/Github-page/index" target="_blank">Unhooked Engine V2</a>, a game engine focused on particle systems that I developed from scratch in 2023. This V3 version takes the best features of that engine to create a new one aimed at advanced graphics.
+Unhooked Engine V3 is the evolution of <a href="https://xdavido.github.io/UnhookedEngine.v2/Github-page/index" target="_blank" class="email-link">Unhooked Engine V2</a>, a game engine focused on particle systems that I developed from scratch in 2023. This V3 version takes the best features of that engine to create a new one aimed at advanced graphics.
 
 						 </p>
 						 <ol class="work-technologies">
@@ -722,7 +719,11 @@ Meet Salt-Peter, an alchemist that got robbed his precious philosopher's stone a
                 Available for opportunities
               </strong>
               <div class="contact-info">
-                <p><strong>Email:</strong> davidruizluengo@gmail.com</p>
+                <p><strong>Email:</strong> 
+				  <a href="mailto:davidruizluengo@gmail.com" class="email-link">
+					davidruizluengo@gmail.com
+				  </a>
+				</p>
                 <p><strong>Location:</strong> Murcia, Spain <span class="relocation-badge">Relocation available</span> </p>
 				 
               </div>
