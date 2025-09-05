@@ -158,6 +158,10 @@ h3,
   font-size: var(--h4);
 }
 
+strong {
+  font-weight: 650; 
+}
+
 @media (max-width: 845px) {
   :root {
     --h1: 2.845rem;

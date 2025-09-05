@@ -1,790 +1,791 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow" />
-
-    <meta
-      name="description"
-      content="Portfolio of David Ruiz Luengo - Junior Technical Artist specialized in game development tools, shaders, and VFX."
-    />
-
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Luengox Portfolio">
-    <meta itemprop="description" content="Portfolio of David Ruiz Luengo - Junior Technical Artist">
-
-    
-    <link rel="shortcut icon" href="assets/images/LOGO.png" type="image/png" />
-    <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-
-    <title>Luengox | Portfolio</title>
+	<meta name="robots" content="index, follow" />
 	
-  </head>
-
-  <body>
-    <script>
-      const theme = localStorage.getItem("theme") || "light";
-      document.body.classList.add(theme);
-    </script>
+	<meta
+	name="description"
+	content="Portfolio of David Ruiz Luengo - Junior Technical Artist specialized in game development tools, shaders, and VFX."
+	/>
 	
- 	 <div class="menu-btn-container">
+	<!-- Google / Search Engine Tags -->
+	<meta itemprop="name" content="Luengox Portfolio">
+	<meta itemprop="description" content="Portfolio of David Ruiz Luengo - Junior Technical Artist">
+	
+	
+	<link rel="shortcut icon" href="assets/images/LOGO.png" type="image/png" />
+	<link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="stylesheet" href="style.css" />
+	<script src="script.js" defer></script>
+	
+	<title>Luengox | Portfolio</title>
+	
+</head>
+
+<body>
+	<script>
+		const theme = localStorage.getItem("theme") || "light";
+		document.body.classList.add(theme);
+	</script>
+	
+	<div class="menu-btn-container">
 		<div class="container">
-		  <button type="button" class="menu-btn">menu</button>
+			<button type="button" class="menu-btn">menu</button>
 		</div>
-	  </div>
-	  
-	  <nav class="nav hidden">
+	</div>
+	
+	<nav class="nav hidden">
 		<ol class="nav-items">
-		  <li class="nav-item"><a href="#">Home</a></li>
-		  <li class="nav-item"><a href="#formation">Education</a></li>
-		  <li class="nav-item"><a href="#projects">Projects</a></li>
-		  <li class="nav-item"><a href="#experience">Experience</a></li>
-		  <li class="nav-item"><a href="#skills">ToolKit</a></li>
-		  <li class="nav-item"><a href="#jams">GameJams</a></li>
-		  <li class="nav-item">
-			<a href="#contact" data-focused="last-focused">Contact</a>
-		  </li>
+			<li class="nav-item"><a href="#">Home</a></li>
+			<li class="nav-item"><a href="#formation">Education</a></li>
+			<li class="nav-item"><a href="#projects">Projects</a></li>
+			<li class="nav-item"><a href="#experience">Experience</a></li>
+			<li class="nav-item"><a href="#skills">ToolKit</a></li>
+			<li class="nav-item"><a href="#jams">GameJams</a></li>
+			<li class="nav-item">
+				<a href="#contact" data-focused="last-focused">Contact</a>
+			</li>
 		</ol>
-	  </nav>
-	  
-    <header class="header">
-      <div class="container">
-        <div class="header-textbox">
-         <h3 class="h3">
-		  <span>Hi, I'm <span class="highlight-name">David Ruiz Luengo</span></span>
-		</h3>
-          <h1 class="h1">
-            <span>Junior Technical Artist</span>
-          </h1>
-
-          <p class="header-text">
-           Graduate in Video Game Design and Development. Specialized in procedural tools, graphics development, VFX, and 3D characters. Passionate about creating artistic and technological solutions that provide players with a unique experience.
-          </p>
-
-          <div class="header-btns">
-            <a href="assets/documents/David_Ruiz_Luengo_CV_2025.pdf" download="David_Ruiz_Luengo_CV_2025.pdf" class="btn btn-cta">Download CV</a>
-            <a href="#projects" class="btn btn-secondary">View Projects</a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <!-- Formation Section - Horizontal Boxes -->
-      <section class="formation" id="formation">
-        <div class="container">
-          <h1 class="title-section">EDUCATION</h1>
-		  
-		  <div class="education-container">
+	</nav>
+	
+	<header class="header">
+		<div class="container">
+			<div class="header-textbox">
+				<h3 class="h3">
+					<span>Hi, I'm <span class="highlight-name">David Ruiz Luengo</span></span>
+				</h3>
+				<h1 class="h1">
+					<span>Junior Technical Artist</span>
+				</h1>
 				
-			  <!-- Education Box 1 -->
-			  <a href="https://www.digipen.es/" target="_blank" class="education-link">
-				<div class="experience-box">
-					<div class="experience-header">
-						<div class="experience-logo">
-							<img loading="lazy" src="assets/images/education/Digipen.png" alt="Digipen" />
-						</div>
-						<div class="experience-title-container">
-							<div class="experience-title-row">
-								<h3 class="h3">Art and Animation, 2D and 3D - Summer Workshop</h3>
-							</div>
-							<p class="formation-institution">DigiPen Europe | Bilbao</p>
-							<p class="experience-meta">2019</p>	
-						</div>
-					</div>
-				</div>
-				</a>
-               <!-- Education Box 2 -->
-			  <a href="https://www.citm.upc.edu/" target="_blank" class="education-link">			   
-				<div class="experience-box">  
-					<div class="experience-header">
-						<div class="experience-logo">
-							<img loading="lazy" src="assets/images/education/Upc.png" alt="upc" />
-						</div>
-						<div class="experience-title-container">
-							<div class="experience-title-row">
-								<h3 class="h3">Bachelor's Degree in Video Game Design and Development</h3>
-							</div>
-							<p class="formation-institution">Universidad Politécnica de Cataluña | UPC (CITM)</p>
-							<p class="experience-meta">2021 - 2025</p>	
-						</div>
-					</div> 
-				</div>
-				</a>
-				<!-- Education Box 3 -->
-			  <a href="https://haz.institutortve.com/" target="_blank" class="education-link">				
-				<div class="experience-box">  
-					<div class="experience-header">
-						<div class="experience-logo">
-							<img loading="lazy" src="assets/images/education/Rtve.png" alt="rtve" />
-						</div>
-						<div class="experience-title-container">
-							<div class="experience-title-row">
-								<h3 class="h3">Advanced Virtual Production with Simulcam and Unreal Engine (5th Edition) - Certified course</h3>
-							</div>
-							<p class="formation-institution">RTVE Institute</p>
-							<p class="experience-meta">2025</p>	
-						</div>
-					</div> 
-				</div>
-				</a>
+				<p class="header-text">
+					Graduate in Video Game Design and Development. Specialized in procedural tools, graphics development, VFX, and 3D characters. Passionate about creating artistic and technological solutions that provide players with a unique experience.
+				</p>
 				
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section - Organized by Categories -->
-      <section class="projects" id="projects">
-        <div class="container">
-          <h1 class="title-section">PROJECTS</h1>
-          
-			 <!-- Tools Category -->
-			 <div class="category-section">
+				<div class="header-btns">
+					<a href="assets/documents/David_Ruiz_Luengo_CV_2025.pdf" download="David_Ruiz_Luengo_CV_2025.pdf" class="btn btn-cta">Download CV</a>
+					<a href="#projects" class="btn btn-secondary">View Projects</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		<!-- Formation Section - Horizontal Boxes -->
+		<section class="formation" id="formation">
+			<div class="container">
+				<h1 class="title-section">EDUCATION</h1>
+				
+				<div class="education-container">
+					
+					<!-- Education Box 1 -->
+					<a href="https://www.digipen.es/" target="_blank" class="education-link">
+						<div class="experience-box">
+							<div class="experience-header">
+								<div class="experience-logo">
+									<img loading="lazy" src="assets/images/education/Digipen.png" alt="Digipen" />
+								</div>
+								<div class="experience-title-container">
+									<div class="experience-title-row">
+										<h3 class="h3">Art and Animation, 2D and 3D - Summer Workshop</h3>
+									</div>
+									<p class="formation-institution">DigiPen Europe | Bilbao</p>
+									<p class="experience-meta">2019</p>	
+								</div>
+							</div>
+						</div>
+					</a>
+					<!-- Education Box 2 -->
+					<a href="https://www.citm.upc.edu/" target="_blank" class="education-link">			   
+						<div class="experience-box">  
+							<div class="experience-header">
+								<div class="experience-logo">
+									<img loading="lazy" src="assets/images/education/Upc.png" alt="upc" />
+								</div>
+								<div class="experience-title-container">
+									<div class="experience-title-row">
+										<h3 class="h3">Bachelor's Degree in Video Game Design and Development</h3>
+									</div>
+									<p class="formation-institution">Universidad Politécnica de Cataluña | UPC (CITM)</p>
+									<p class="experience-meta">2021 - 2025</p>	
+								</div>
+							</div> 
+						</div>
+					</a>
+					<!-- Education Box 3 -->
+					<a href="https://haz.institutortve.com/" target="_blank" class="education-link">				
+						<div class="experience-box">  
+							<div class="experience-header">
+								<div class="experience-logo">
+									<img loading="lazy" src="assets/images/education/Rtve.png" alt="rtve" />
+								</div>
+								<div class="experience-title-container">
+									<div class="experience-title-row">
+										<h3 class="h3">Advanced Virtual Production with Simulcam and Unreal Engine (5th Edition) - Certified course</h3>
+									</div>
+									<p class="formation-institution">RTVE Institute</p>
+									<p class="experience-meta">2025</p>	
+								</div>
+							</div> 
+						</div>
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Projects Section - Organized by Categories -->
+	<section class="projects" id="projects">
+		<div class="container">
+			<h1 class="title-section">PROJECTS</h1>
+			
+			<!-- Tools Category -->
+			<div class="category-section">
 				<h2 class="h2">PCG Tools</h2>
 				
 				<!-- HDA -->		
-				  <div class="work-box">
+				<div class="work-box">
 					<div class="work-textbox">
-					  <h3 class="h3">Procedural Scene Generator for Virtual Production</h3>
-					  <p class="work-text">
-						 As my final degree project and with the aim of addressing one of the main challenges in the virtual production industry, the shortage of qualified professionals, I developed a procedural HDA tool capable of generating complete virtual sets from an editable curve, optimizing the workflow and reducing the reliance on specialized manual tasks.</p>
-					  <ol class="work-technologies">
-						<li>Houdini</li>
-						<li>Unreal Engine 5.5</li>
-					  </ol>
-					  <div class="work-links">
-						<a href="https://drive.google.com/file/d/1kZkxEB5fXogY3ModLADJytf_IoOgP9XH/view?usp=sharing" target="_blank" rel="noopener" class="link">Full Breakdown Document</a>
-						<a href="https://www.artstation.com/artwork/AZLWGN" target="_blank" rel="noopener" title="ArtStation">
-						  <img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
-						</a>
-					  </div>
+						<h3 class="h3">Procedural Scene Generator for Virtual Production</h3>
+						<p class="work-text">
+							As my <strong>final degree project</strong> and with the aim of addressing one of the <strong>main challenges</strong> in the virtual production industry, the <strong>shortage of qualified professionals</strong>, I developed a <strong>procedural HDA tool</strong> capable of generating <strong>complete virtual sets from an editable curve</strong>, optimizing the workflow and reducing the reliance on specialized manual tasks.</p>
+							<ol class="work-technologies">
+								<li>Houdini</li>
+								<li>Unreal Engine 5.5</li>
+							</ol>
+							<div class="work-links">
+								<a href="https://drive.google.com/file/d/1kZkxEB5fXogY3ModLADJytf_IoOgP9XH/view?usp=sharing" target="_blank" rel="noopener" class="link">Full Breakdown Document</a>
+								<a href="https://www.artstation.com/artwork/AZLWGN" target="_blank" rel="noopener" title="ArtStation">
+									<img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
+								</a>
+							</div>
+						</div>
+						<video class="work-img" poster="assets/images/work/HDA.png" autoplay muted loop playsinline>
+							<source src="assets/videos/HDAProceso.mp4" type="video/mp4">
+						</video>
 					</div>
-					<video class="work-img" poster="assets/images/work/HDA.png" autoplay muted loop playsinline>
-					  <source src="assets/videos/HDAProceso.mp4" type="video/mp4">
-					</video>
-				  </div>
-				
-				 <!-- Pool -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Procedural Pool Tool</h3>
-					  <p class="work-text">
-WIP					  </p>
-					  <ol class="work-technologies">
-						<li>Houdini</li>
-						<li>Unreal Engine</li>
-					  </ol>
-					  <div class="work-links">
-						<a href="" target="_blank" rel="noopener" title="ArtStation">
-						  <img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
-						</a>
-						
-					  </div>
-					</div>
-					<video class="work-img" poster="assets/images/work/WIP.png" autoplay muted loop playsinline>
-					  <source src="assets/videos/Pool.mp4" type="video/mp4">
-					</video>
-				  </div>
-				  
-				  <!-- Rays -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Procedural Lightning System</h3>
-					  <p class="work-text">
-						As a flexible solution for creating realistic energy effects without simulation. By controlling shape, thickness, and intensity through custom attributes and noise patterns, the tool helps artists quickly integrate primary and secondary bolts, along with electric effects on objects, into their scenes with full creative control.
-					  </p>
-					  <ol class="work-technologies">
-						<li>Houdini</li>
-					  </ol>
 					
-					</div>
-					<video class="work-img" poster="assets/images/work/.png" autoplay muted loop playsinline>
-					  <source src="assets/videos/rays.mp4" type="video/mp4">
-					</video>
-				  </div>
-				  
-				  <!-- Mosaico -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Mosaic Generator</h3>
-					  <p class="work-text">
-						 System that transforms any image into a three-dimensional mosaic, extruding and shaping geometry based on the texture’s color values. The tool offers a fast, flexible workflow to create unique volumetric compositions, with full control over height, materials, and lighting.
-					  </p>
-					  <ol class="work-technologies">
-						<li>Houdini</li>
-					  </ol>
-					  <div class="work-links">
-						<a href="https://www.artstation.com/artwork/BkK9xm" target="_blank" rel="noopener" title="ArtStation">
-						  <img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
-						</a>
-						
-					  </div>
-					</div>
-					<picture class="work-img">
-					  <img loading="lazy" src="assets/images/work/espiral.jpg" alt="Pool" />
-					</picture>
-				  </div>
-			  
-			</div>
-			
-			
-			<!-- VFX Category -->
-			 <div class="category-section">
-				<h2 class="h2">VFX</h2>
-				
-				<!-- Wall Destruction -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Wall Destruction</h3>
-					  <p class="work-text">
-							I integrated my procedural lightning generator into an RBD simulation to recreate the moment a lightning bolt strikes and shatters a brick wall. The effect combines dynamic lighting, particle-generated sparks, and dense smoke at the point of impact, simulating heat and combustion. The result is a shot with high realism and strong visual impact.					
-					  </p>
-					  <ol class="work-technologies">
-						<li>Houdini</li>
-					  </ol>
-					 
-					</div>
-					<video class="work-img" autoplay muted loop playsinline>
-					  <source src="assets/videos/Wall.mp4" type="video/mp4">
-					  Tu navegador no soporta video HTML5.
-					</video>
-				  </div>
-				
-				 <!-- Stylized VFX -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Stylized VFX Pack</h3>
-					  <p class="work-text">
-							description					  </p>
-					  <ol class="work-technologies">
-						<li>Unity URP</li>
-						<li>VFX Graph</li>
-						<li>Shader Graph</li>
-					  </ol>
-					  <div class="work-links">
-						<a href="https://www.artstation.com/artwork/a0JqXz" target="_blank" rel="noopener" title="ArtStation">
-						  <img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
-						</a>
-						<a href="https://xarderos.itch.io/salt-peter" target="_blank" rel="noopener" title="itchio">
-						  <img src="assets/images/social-links/itchio.svg" alt="itchio" loading="lazy" />
-						</a>
-					  </div>
-					</div>
-					<picture class="work-img">
-					  <img loading="lazy" src="assets/images/work/SaltpeterVFX.png" alt="Stylized VFX" />
-					</picture>
-				  </div>
-				  
-				  <!-- Ray Simulation -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Ray Fight VFX</h3>
-					  <p class="work-text">
-							WIP					 
-					</p>
-					 <ol class="work-technologies">
-						<li>Houdini</li>
-						<li>Unreal  Engine</li>
-					  </ol>
-					  <div class="work-links">
-						<a href="" target="_blank" rel="noopener" title="ArtStation">
-						  <img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
-						</a>
-						<a href="" target="_blank" rel="noopener" title="Youtube">
-						  <img src="assets/images/social-links/youtube.svg" alt="youtube" loading="lazy" />
-						</a>
-					  </div>
-					</div>
-					<video class="work-img" poster="assets/images/work/WIP.png" autoplay muted loop playsinline>
-					  <source src="assets/videos/.mp4" type="video/mp4">
-					</video>
-				  </div>
-				  
-				  <!-- Smoke & Fire Simulation -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Smoke & Fire</h3>
-					  <p class="work-text">
-							A focused study on smoke and fire simulation behavior in Houdini, using a digital sculpture of Anubis as the base. The project aimed to explore fluid dynamics around complex geometry, enhancing my understanding of volumetric effects and procedural control to achieve realistic and compelling visuals.					 
-						</p>
-					 <ol class="work-technologies">
-						<li>Houdini</li>
-					  </ol>
-					 
-					</div>
-					<video class="work-img" poster="assets/images/work/.png" autoplay muted loop playsinline>
-					  <source src="assets/videos/smoke.mp4" type="video/mp4">
-					</video>
-				  </div>
-				  
-				   <!-- bLUHORSE Rebranding-->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">BlueHorse Rebranding</h3>
-					  <p class="work-text">
-							A modernization of the Blue Horse brand, a Turkish hookah tobacco company, by creating a minimalist and elegant design centered on a blue smoke horse. Using Houdini, I generated dynamic and detailed smoke volumes with nodes such as Mountain, VDB from Polygons, and Volume VOP, combining simulation and volumetric deformation techniques to craft a realistic, sensory trail that enhances the product’s theme.					  
-						</p>
-					 <ol class="work-technologies">
-						<li>Houdini</li>
-						<li>Blender</li>
-					  </ol>
-					 <div class="work-links">
-						<a href="https://www.artstation.com/artwork/4NLl8n" target="_blank" rel="noopener" title="ArtStation">
-						  <img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
-						</a>
-					  </div>
-					</div>
-					<picture class="work-img">
-					  <img loading="lazy" src="assets/images/work/Bluehorse.png" alt="Bluehorse VFX" />
-					</picture>
-				  </div>
-			  
-			</div>
-			
-			<!-- Graphics Category -->
-			 <div class="category-section">
-				<h2 class="h2">Graphics Development</h2>
-				
-				<!-- Shaderetoy -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Single Quad Shader </h3>
-					  <p class="work-text">
-Built from scratch on Shadertoy with no meshes or models...just math and procedural textures. Features real reflections and refractions with one bounce, hard shadows with adaptive Fresnel, local lighting, animated Perlin noise sky, distance fog, surface texturing, supersampling antialiasing, and mouse-controlled camera. Rendered on a single quad, showcasing pure code magic.						
-						</p>
-						<ol class="work-technologies">
-						<li>GLSL</li>
-						<li>WebGL</li>
-					  </ol>
-					  <div class="work-links">
-						<a href="https://www.shadertoy.com/view/Wf2Szw" target="_blank" rel="noopener" class="link">Shadertoy</a>
-						<a href="https://www.artstation.com/artwork/Jr51zm" target="_blank" rel="noopener" title="ArtStation">
-						  <img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
-						</a>
-					  </div>
-					  
-					</div>
-					<video class="work-img" poster="assets/images/work/Shadertoy.png" autoplay muted loop playsinline>
-					  <source src="assets/videos/shadertoy.mp4" type="video/mp4">
-					</video>
-				  </div>
-				  
-				  <!-- Cell Shader -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Toon Shader</h3>
-					  <p class="work-text">
-Editable cell cartoon shader made for a Game Jam, featuring dynamic control over the number of cells with customizable shading and highlight effects. It also includes an outline effect. Built entirely with Shader Graph, it delivers a clean and adaptable visual style that can be layered over asset textures.						</p>
-						<ol class="work-technologies">
-						<li>Unity URP</li>
-						<li>Shader Graph</li>
-					  </ol>
-					  <div class="work-links">
-						<a href="https://xarderos.itch.io/paraules-a-mida" target="_blank" rel="noopener" title="itchio">
-						  <img src="assets/images/social-links/itchio.svg" alt="itchio" loading="lazy" />
-						</a>
-					  </div>
-					</div>
-					<video class="work-img" autoplay muted loop playsinline>
-					  <source src="assets/videos/CellShader.mp4" type="video/mp4">
-					  Tu navegador no soporta video HTML5.
-					</video>
-				  </div>
-				  
-				  <!-- WaterEffect Engine -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Unhooked Engine V3</h3>
-					  <p class="work-text">
-Unhooked Engine V3 is the evolution of <a href="https://xdavido.github.io/UnhookedEngine.v2/Github-page/index" target="_blank" class="email-link">Unhooked Engine V2</a>, a game engine focused on particle systems that I developed from scratch in 2023. This V3 version takes the best features of that engine to create a new one aimed at advanced graphics.
-
-						 </p>
-						 <ol class="work-technologies">
-						<li>OpenGL</li>
-						<li>Visual Studio</li>
-					  </ol>
-					  <div class="work-links">
-						<a href="https://github.com/xdavido/UnhookedEngine.v3" target="_blank" rel="noopener" title="GitHub">
-						  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
-						</a>
-						
-					  </div>
-					</div>
-					<video class="work-img" poster="assets/images/work/unhooked.png" autoplay muted loop playsinline>
-					  <source src="assets/videos/unhooked.mp4" type="video/mp4">
-					</video>
-				  </div>
-			  
-			</div>
-			
-			<!-- Characters Category -->
-			 <div class="category-section">
-				<h2 class="h2">3D Characters & Creatures</h2>
-				
-				<!-- NeoPrince -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Neomorph Prince</h3>
-					  <p class="work-text">
-						 	
-I present to you this cinematic model concept of a "Neomorph Prince", a half-xenomorph, half-neomorph creature. Inspired by Jared Chavez's videos, I decided to revisit one of the pieces I had created for a previous project, which had a stylized comic style, and bring it into realism.
+					<!-- Pool -->		
+					<div class="work-box">
+						<div class="work-textbox">
+							<h3 class="h3">Procedural Pool Tool</h3>
+							<p class="work-text">
+								Procedural HDA tool designed for <strong>ArchViz</strong>, offering <strong>12 classic pool shapes</strong> with full customization. <strong>Clients</strong> can explore <strong>real-time variations</strong> until they find the design that perfectly fits their <strong>architectural project</strong>.
 							</p>
-						<ol class="work-technologies">
-						<li>ZBursh</li>
-						<li>Substance Painter</li>
-						<li>Blender</li>
-					  </ol>
-					  <div class="work-links">
-						<a href="https://www.artstation.com/artwork/xDEbvO" target="_blank" rel="noopener" title="ArtStation">
-						  <img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
-						</a>
-					  </div>
-					</div>
-					<video class="work-img" poster="assets/images/work/neoprince.png" autoplay muted loop playsinline>
-					  <source src="assets/videos/neoprince.mp4" type="video/mp4">
-					</video>
-				  </div>
-				  
-				  <!-- Kodama -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Mushroom Kodama</h3>
-					  <p class="work-text">
-This is my version of the legendary Japanese creature Kodama, bringing to life its mystical essence through detailed modeling and subtle texturing. I also explored its surrounding environment, using Blender and Geometry Nodes to create a natural landscape that embraces it like home.						</p>
-						 <ol class="work-technologies">
-						<li>ZBursh</li>
-						<li>Maya</li>
-						<li>Substance Painter</li>
-						<li>Blender</li>
-					  </ol>
-					  <div class="work-links">
-						<a href="https://www.artstation.com/artwork/m8N4mY" target="_blank" rel="noopener" title="ArtStation">
-						  <img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
-						</a>
-					  </div>
-					</div>
-					<picture class="work-img">
-					  <img loading="lazy" src="assets/images/work/kodama.png" alt="Kodama" />
-					</picture>
-				  </div>
-				  
-				  <!-- Saltpeter -->		
-				  <div class="work-box">
-					<div class="work-textbox">
-					  <h3 class="h3">Salt-Peter the Alchemist</h3>
-					  <p class="work-text">
-						 Made it during the 14 days Pirate Software Jam 2024 for browser.
-Meet Salt-Peter, an alchemist that got robbed his precious philosopher's stone amongst other useful magical items and has to get them back from the shadow world.	  <ol class="work-technologies">
-						<li>Substance Painter</li>
-						<li>Blender</li>
-					  </ol>
-					  <div class="work-links">
-						<a href="https://www.artstation.com/artwork/1NxP9K" target="_blank" rel="noopener" title="ArtStation">
-						  <img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
-						</a>
-						<a href="https://xarderos.itch.io/salt-peter" target="_blank" rel="noopener" title="itchio">
-						  <img src="assets/images/social-links/itchio.svg" alt="itchio" loading="lazy" />
-						</a>
-					  </div>
-					</div>
-					<picture class="work-img">
-					  <img loading="lazy" src="assets/images/work/saltpeter.png" alt="Saltpeter" />
-					</picture>
-				  </div>
-				 
-			  
-			</div>
-		</div>
-      </section>
-
-      <!-- Experience Section - Detailed Boxes -->
-      <section class="experience" id="experience">
-        <div class="container">
-          <h1 class="title-section">EXPERIENCE</h1>
-		  
-			<!-- Experience 1 -->
-			<a href="https://www.3cat.cat/3cat/" target="_blank" class="education-link">
-			<div class="experience-box">
-				<!-- Header Section with Logo and Basic Info -->
-				<div class="experience-header">
-					<div class="experience-logo">
-					<img loading="lazy" src="assets/images/experience/3cat.png" alt="3CAT" />
-					</div>
-					<div class="experience-title-container">
-						<div class="experience-title-row">
-							<h3 class="experience-position">Technical Artist</h3>
-							<span class="experience-type-badge">Service-based Internship</span>
+							<ol class="work-technologies">
+								<li>Houdini</li>
+								<li>Unreal Engine</li>
+							</ol>
+							<!-- <div class="work-links"> -->
+								<!-- <a href="" target="_blank" rel="noopener" title="ArtStation"> -->
+									<!-- <img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" /> -->
+								<!-- </a> -->
+								
+							<!-- </div> -->
 						</div>
-						<p class="experience-company">3CAT Corp</p>
-						<div class="experience-meta">
-							<span class="experience-duration">
-								<img src="assets/images/icons/calendar.svg" alt="Duration" class="meta-icon">
-								September 2024 - March 2025 (7 months)
-							</span>
-							<span class="experience-location">
-								<img src="assets/images/icons/location.svg" alt="Location" class="meta-icon">
-								On-site / Barcelona, Spain
-							</span>
-						</div>
+						<video class="work-img" poster="assets/images/work/WIP.png" autoplay muted loop playsinline>
+							<source src="assets/videos/Pool.mp4" type="video/mp4">
+						</video>
 					</div>
+					
+					<!-- Rays -->		
+					<div class="work-box">
+						<div class="work-textbox">
+							<h3 class="h3">Procedural Lightning System</h3>
+							<p class="work-text">
+								As a flexible <strong>solution</strong> for creating <strong>realistic</strong> energy effects <strong>without simulation</strong>. By controlling shape, thickness, and intensity through custom attributes and noise patterns, the tool <strong>helps artists</strong> quickly integrate <strong>primary and secondary bolts</strong>, along with electric effects <strong>on objects</strong>, into their scenes with <strong>full creative control</strong>.
+							</p>
+							<ol class="work-technologies">
+								<li>Houdini</li>
+							</ol>
+							
+						</div>
+						<video class="work-img" poster="assets/images/work/.png" autoplay muted loop playsinline>
+							<source src="assets/videos/rays.mp4" type="video/mp4">
+						</video>
+					</div>
+					
+					<!-- Mosaico -->		
+					<div class="work-box">
+						<div class="work-textbox">
+							<h3 class="h3">Mosaic Generator</h3>
+							<p class="work-text">
+								<strong>System</strong> that transforms <strong>any image into a three-dimensional mosaic</strong>, extruding and shaping geometry based on the texture’s color values. The tool offers a <strong>fast and flexible</strong> workflow to create unique volumetric compositions, with full control over height, materials, and lighting.
+							</p>
+							<ol class="work-technologies">
+								<li>Houdini</li>
+							</ol>
+							<div class="work-links">
+								<a href="https://www.artstation.com/artwork/BkK9xm" target="_blank" rel="noopener" title="ArtStation">
+									<img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
+								</a>
+								
+							</div>
+						</div>
+						<picture class="work-img">
+							<img loading="lazy" src="assets/images/work/espiral.jpg" alt="Pool" />
+						</picture>
+					</div>
+					
 				</div>
-
-				<!-- Main Content Section -->
-				<div class="experience-content">
-					<!-- Responsibilities Section -->
-					<div class="experience-section">
-						<p> Collaborative university-contract project with 3Cat, focused on developing innovative solutions to promote news consumption among young audiences.</p>
+				
+				
+				<!-- VFX Category -->
+				<div class="category-section">
+					<h2 class="h2">VFX</h2>
+					
+					<!-- Wall Destruction -->		
+					<div class="work-box">
+						<div class="work-textbox">
+							<h3 class="h3">Wall Destruction</h3>
+							<p class="work-text">
+								I integrated my <strong>mentioned procedural lightning system</strong> into an <strong>RBD simulation</strong> to recreate the moment a lightning bolt strikes and shatters a brick wall. <strong>The effect combines</strong> dynamic <strong>lighting</strong>, particle-generated <strong>sparks</strong>, and dense <strong>smoke</strong> at the point of impact, simulating heat and combustion. The result is a <strong>shot with high realism</strong> and strong <strong>visual impact</strong>.					
+							</p>
+							<ol class="work-technologies">
+								<li>Houdini</li>
+							</ol>
+							
+						</div>
+						<video class="work-img" autoplay muted loop playsinline>
+							<source src="assets/videos/Wall.mp4" type="video/mp4">
+							Tu navegador no soporta video HTML5.
+						</video>
+					</div>
+					
+					<!-- Stylized VFX -->		
+					<div class="work-box">
+						<div class="work-textbox">
+							<h3 class="h3">Stylized VFX Pack</h3>
+							<p class="work-text">
+								A pack of stylized VFX created in Unity over the course of a <strong>14-day game jam</strong>. Designed to <strong>enhance</strong> gameplay <strong>aesthetics</strong>, the effects are <strong>lightweight and versatile</strong>.					  </p>
+								<ol class="work-technologies">
+									<li>Unity URP</li>
+									<li>VFX Graph</li>
+									<li>Shader Graph</li>
+								</ol>
+								<div class="work-links">
+									<a href="https://www.artstation.com/artwork/a0JqXz" target="_blank" rel="noopener" title="ArtStation">
+										<img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
+									</a>
+									<a href="https://xarderos.itch.io/salt-peter" target="_blank" rel="noopener" title="itchio">
+										<img src="assets/images/social-links/itchio.svg" alt="itchio" loading="lazy" />
+									</a>
+								</div>
+							</div>
+							<picture class="work-img">
+								<img loading="lazy" src="assets/images/work/SaltpeterVFX.png" alt="Stylized VFX" />
+							</picture>
+						</div>
 						
-						<ul class="experience-description">
-							<li class="experience-bullet">
-								<span class="bullet-icon">▹</span>
-								Created a complete immersive experience prototype ready for testing
-							</li>
-							<li class="experience-bullet">
-								<span class="bullet-icon">▹</span>
-								Developed shaders, VFX, and post-processing effects
-							</li>
-							<li class="experience-bullet">
-								<span class="bullet-icon">▹</span>
-								Facilitated collaboration between art and programming departments
-							</li>
-						</ul>
-					</div>
-
-					<!-- Technologies Section -->
-					<div class="experience-section">
-						<h4 class="experience-section-title">
-						   
-							Technologies Used
-						</h4>
-						<div class="experience-tech-tags">
-							<span class="tech-tag">Unity 6</span>
-							<span class="tech-tag">VFX Graph</span>
-							<span class="tech-tag">Shader Graph</span>
-							<span class="tech-tag">VR</span>
-							<span class="tech-tag">Maya</span>
-							<span class="tech-tag">Substance Painter</span>
+						<!-- Ray Simulation -->		
+						<div class="work-box">
+							<div class="work-textbox">
+								<h3 class="h3">Ray Fight VFX</h3>
+								<p class="work-text">
+									Work In Progress				 
+								</p>
+								<ol class="work-technologies">
+									<li>Houdini</li>
+									<li>Unreal  Engine</li>
+								</ol>
+								<!-- <div class="work-links"> -->
+									<!-- <a href="" target="_blank" rel="noopener" title="ArtStation"> -->
+										<!-- <img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" /> -->
+									<!-- </a> -->
+									<!-- <a href="" target="_blank" rel="noopener" title="Youtube"> -->
+										<!-- <img src="assets/images/social-links/youtube.svg" alt="youtube" loading="lazy" /> -->
+									<!-- </a> -->
+								<!-- </div> -->
+							</div>
+							<video class="work-img" poster="assets/images/work/WIP.png" autoplay muted loop playsinline>
+								<source src="assets/videos/.mp4" type="video/mp4">
+							</video>
 						</div>
-					</div>			
-				</div>
-			</div>
-			</a>
-			
-		</div>
-		</div>
-	  </section>
-
-      <!-- Skills Section - Updated for Technical Artist -->
-      <section class="skills" id="skills">
-        <div class="container">
-          <h1 class="title-section">TOOLKIT</h1>
-          
-            <!-- Software Skills -->
-            <div class="category-section">  
-                <img src="assets/images/skills/Softwares.png" alt="Unity" class="img" loading="lazy" title="Softwares">
-            </div>
-            
-			   <!-- Software Skills -->
-            <div class="category-section">  
-                <img src="assets/images/skills/Languages.png" alt="Unity" class="img" loading="lazy" title="Code Languages">
-            </div>
-          
-        </div>
-      </section>
-
-
-	  <!-- GAMEJAMS Section - Updated for Technical Artist -->
-		<section class="jams" id="jams">
-		  <div class="container">
-			<h1 class="title-section">GAMEJAMS</h1>
-
-			<div class="games-container">
-
-			  <!-- SPIRAL -->
-			  <a href="https://xarderos.itch.io/spiral" target="_blank" class="game-link">
-				<div class="game-box">
-				  <span class="award-badge">
-					<img src="assets/images/icons/award.svg" alt="Award" class="award-icon">
-					Best Art Award
-				  </span>
-				  <div class="game-jam">8th Grand CITM Game Jam</div>
-				  <div class="game-year">2025</div>
-				  <img src="assets/images/jams/Spiral.png" alt="Spiral" class="game-image">
-				  <div class="game-info">
-					<h3 class="game-title">Spiral</h3>
-					<p class="game-description">
-					  Spiral is a psychological roguelike about the gambling addiction, 
-					  where every shortcut has lasting consequences.
-					</p>
-				  </div>
-				</div>
-			  </a>
-
-			  <!-- PARAULES A MIDA -->
-			  <a href="https://xarderos.itch.io/paraules-a-mida" target="_blank" class="game-link">
-				<div class="game-box">
-				  <div class="game-jam">2nd Premis Ludi</div>
-				  <div class="game-year">2024</div>
-				  <img src="assets/images/jams/Mida.png" alt="Paraules a Mida" class="game-image">
-				  <div class="game-info">
-					<h3 class="game-title">Paraules a Mida</h3>
-					<p class="game-description">
-					  Step into the magical shop where words are crafted to perfection!
-					</p>
-				  </div>
-				</div>
-			  </a>
-
-			  <!-- SALT PETER -->
-			  <a href="https://xarderos.itch.io/salt-peter" target="_blank" class="game-link">
-				<div class="game-box">
-				  <span class="award-badge">Top 25/2500</span>
-				  <div class="game-jam">15th Pirate Software Game Jam</div>
-				  <div class="game-year">2024</div>
-				  <img src="assets/images/jams/Peter.png" alt="SaltPeter" class="game-image">
-				  <div class="game-info">
-					<h3 class="game-title">Salt-Peter and The Philosopher's Stone</h3>
-					<p class="game-description">
-					  Retrieve Salt-Peter's most precious possession: the Philosopher's Stone!
-					</p>
-				  </div>
-				</div>
-			  </a>
-
-			  <!-- THANKS MONSTER -->
-			  <a href="https://xaita09.itch.io/thanksmonster" target="_blank" class="game-link">
-				<div class="game-box">
-				  <span class="award-badge">
-					<img src="assets/images/icons/award.svg" alt="Award" class="award-icon">
-					Best Art Award
-				  </span>
-				  <div class="game-jam">7th Grand CITM Game Jam</div>
-				  <div class="game-year">2024</div>
-				  <img src="assets/images/jams/Monster.png" alt="Thanks, Monster!" class="game-image">
-				  <div class="game-info">
-					<h3 class="game-title">Thanks, Monster!</h3>
-					<p class="game-description">
-					  A very special platformer with amazing art, a lot of different mechanics and a funny and interesting narrative.
-					</p>
-				  </div>
-				</div>
-			  </a>
-
-			  <!-- MIND'S RESONANCE -->
-			  <a href="https://dexuxa.itch.io/minds-resonance" target="_blank" class="game-link">
-				<div class="game-box">
-				  <span class="award-badge">
-					<img src="assets/images/icons/award.svg" alt="Award" class="award-icon">
-					Best Game Award
-				  </span>
-				  <div class="game-jam">6th Grand CITM Game Jam</div>
-				  <div class="game-year">2023</div>
-				  <img src="assets/images/jams/Minds.png" alt="Mind's Resonance" class="game-image">
-				  <div class="game-info">
-					<h3 class="game-title">Mind's Resonance</h3>
-					<p class="game-description">
-					  An action video game where we aimed to understand the echo as the idea of internal mental echoes.
-					</p>
-				  </div>
-				</div>
-			  </a>
-
-			</div>
-		  </div>
-		</section>
-
-
-
-	  
-	  
-      <!-- Contact Section -->
-      <section class="contact" id="contact">
-        <div class="container">
-          <h2 class="h2">Get In Touch</h2>
-          <div class="contact-content">
-            <div class="contact-textbox">
-              
-              <p class="contact-text">
-                Interested in working together or have questions about my work? 
-                Feel free to reach out for collaborations, job opportunities, 
-                or just to chat about technical art and game development.
-              </p>
-              <strong href="#" class="hire-alert">
-                <span class="indicator"></span>
-                Available for opportunities
-              </strong>
-              <div class="contact-info">
-                <p><strong>Email:</strong> 
-				  <a href="mailto:davidruizluengo@gmail.com" class="email-link">
-					davidruizluengo@gmail.com
-				  </a>
-				</p>
-                <p><strong>Location:</strong> Murcia, Spain <span class="relocation-badge">Relocation available</span> </p>
-				 
-              </div>
-            </div>
-            
-            <!-- <form action="#" class="contact-form" netlify> -->
-              <!-- <div class="form-field"> -->
-                <!-- <label for="name">Name</label> -->
-                <!-- <input type="text" name="name" id="name" required /> -->
-              <!-- </div> -->
-              <!-- <div class="form-field"> -->
-                <!-- <label for="email">Email</label> -->
-                <!-- <input type="email" name="email" id="email" required inputmode="email" /> -->
-              <!-- </div> -->
-              <!-- <div class="form-field"> -->
-                <!-- <label for="message">How can I help you?</label> -->
-                <!-- <textarea name="message" id="message" required></textarea> -->
-              <!-- </div> -->
-              <!-- <button type="submit" class="btn btn-cta">Send Message</button> -->
-            <!-- </form> -->
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <nav>
-            <ol class="footer-links">
-              <li class="footer-link">
-                <a title="ArtStation" href="https://www.artstation.com/luengox" target="_blank" rel="noopener">
-                  <img loading="lazy" src="assets/images/social-links/artstation.svg" alt="ArtStation" />
-                </a>
-              </li>
-              <li class="footer-link">
-                <a title="GitHub" href="https://github.com/xdavido" target="_blank" rel="noopener">
-                  <img loading="lazy" src="assets/images/social-links/github.svg" alt="GitHub" />
-                </a>
-              </li>
-              <li class="footer-link">
-                <a title="LinkedIn" href="https://linkedin.com/in/david-ruiz-luengo-954401239" target="_blank" rel="noopener">
-                  <img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="LinkedIn" />
-                </a>
-              </li>
-              <li class="game-link">
-                <a title="Itchio" href="https://xdavido.itch.io/" target="_blank" rel="noopener">
-                  <img loading="lazy" src="assets/images/social-links/itchio.svg" alt="Itchio" />
-                </a>
-              </li>
-            </ol>
-          </nav>
-          <p class="footer-text">
-            &copy; <span>2024</span> David Ruiz Luengo | Junior Technical Artist
-          </p>
-          <label class="theme-switch" for="theme-switch">
-            <span>Dark Theme</span>
-            <input type="checkbox" id="theme-switch" role="switch"/>
-          </label>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+						
+						<!-- Smoke & Fire Simulation -->		
+						<div class="work-box">
+							<div class="work-textbox">
+								<h3 class="h3">Smoke & Fire</h3>
+								<p class="work-text">
+									A focused <strong>study</strong> on <strong>smoke and fire</strong> simulation <strong>behavior</strong> in Houdini, using a digital <strong>sculpture of Anubis</strong> as the base. The project aimed to explore <strong>fluid dynamics</strong> around complex geometry, enhancing my understanding of <strong>volumetric effects</strong> and <strong>procedural control</strong> to achieve <strong>realistic and compelling visuals</strong>.					 
+								</p>
+								<ol class="work-technologies">
+									<li>Houdini</li>
+								</ol>
+								
+							</div>
+							<video class="work-img" poster="assets/images/work/.png" autoplay muted loop playsinline>
+								<source src="assets/videos/smoke.mp4" type="video/mp4">
+							</video>
+						</div>
+						
+						<!-- bLUHORSE Rebranding-->		
+						<div class="work-box">
+							<div class="work-textbox">
+								<h3 class="h3">BlueHorse Rebranding</h3>
+								<p class="work-text">
+									A <strong>modernization</strong> of the Blue Horse <strong>brand</strong>, a Turkish hookah tobacco company, by creating a <strong>minimalist and elegant design</strong> centered on a blue smoke horse. Using Houdini, I generated <strong>dynamic and detailed smoke volumes</strong> with nodes such as Mountain, VDB from Polygons, and Volume VOP, combining <strong>simulation and volumetric deformation techniques</strong> to craft a realistic, sensory trail that <strong>enhances the product’s theme</strong>.					  
+								</p>
+								<ol class="work-technologies">
+									<li>Houdini</li>
+									<li>Blender</li>
+								</ol>
+								<div class="work-links">
+									<a href="https://www.artstation.com/artwork/4NLl8n" target="_blank" rel="noopener" title="ArtStation">
+										<img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
+									</a>
+								</div>
+							</div>
+							<picture class="work-img">
+								<img loading="lazy" src="assets/images/work/Bluehorse.png" alt="Bluehorse VFX" />
+							</picture>
+						</div>
+						
+					</div>
+					
+					<!-- Graphics Category -->
+					<div class="category-section">
+						<h2 class="h2">Graphics Development</h2>
+						
+						<!-- Shaderetoy -->		
+						<div class="work-box">
+							<div class="work-textbox">
+								<h3 class="h3">Single Quad Shader </h3>
+								<p class="work-text">
+									<strong>Shader</strong> built from scratch on Shadertoy with <strong>no meshes or models</strong>...just math and textures. Features realistic <strong>reflections and refractions</strong> with one bounce, <strong>hard shadows</strong> with adaptive <strong>Fresnel</strong>, <strong>local lighting</strong>, animated Perlin noise <strong>sky</strong>, distance <strong>fog</strong>, surface <strong>texturing</strong>, supersampling <strong>antialiasing</strong>, and <strong></strong>mouse-controlled camera</strong>. <strong>Rendered on a single quad</strong>, showcasing pure code magic.						
+								</p>
+								<ol class="work-technologies">
+									<li>GLSL</li>
+									<li>WebGL</li>
+								</ol>
+								<div class="work-links">
+									<a href="https://www.shadertoy.com/view/Wf2Szw" target="_blank" rel="noopener" class="link">Shadertoy</a>
+									<a href="https://www.artstation.com/artwork/Jr51zm" target="_blank" rel="noopener" title="ArtStation">
+										<img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
+									</a>
+								</div>
+								
+							</div>
+							<video class="work-img" poster="assets/images/work/Shadertoy.png" autoplay muted loop playsinline>
+								<source src="assets/videos/shadertoy.mp4" type="video/mp4">
+							</video>
+						</div>
+						
+						<!-- Cell Shader -->		
+						<div class="work-box">
+							<div class="work-textbox">
+								<h3 class="h3">Toon Shader</h3>
+								<p class="work-text">
+									<strong>Editable</strong> cell cartoon shader made for a <strong>Game Jam</strong>, featuring <strong>dynamic control</strong> over the n<strong>umber of cells</strong> with customizable <strong>shading and highlight effects</strong>. It also includes an <strong>outline effect</strong>. Built entirely with Shader Graph, it delivers a clean and adaptable visual style that can be <strong>layered over asset textures</strong>.						</p>
+									<ol class="work-technologies">
+										<li>Unity URP</li>
+										<li>Shader Graph</li>
+									</ol>
+									<div class="work-links">
+										<a href="https://xarderos.itch.io/paraules-a-mida" target="_blank" rel="noopener" title="itchio">
+											<img src="assets/images/social-links/itchio.svg" alt="itchio" loading="lazy" />
+										</a>
+									</div>
+								</div>
+								<video class="work-img" autoplay muted loop playsinline>
+									<source src="assets/videos/CellShader.mp4" type="video/mp4">
+									Tu navegador no soporta video HTML5.
+								</video>
+							</div>
+							
+							<!-- WaterEffect Engine -->		
+							<div class="work-box">
+								<div class="work-textbox">
+									<h3 class="h3">Unhooked Engine V3</h3>
+									<p class="work-text">
+										Unhooked Engine V3 is the <strong>evolution</strong> of <a href="https://xdavido.github.io/UnhookedEngine.v2/Github-page/index" target="_blank" class="email-link">Unhooked Engine V2</a>, a <strong>game engine</strong> focused on <strong>particle systems</strong> that I <strong>developed</strong> from scratch<strong> in 2023</strong>. This <strong>V3 version</strong> takes the <strong>best features</strong> of that V2 engine to create a <strong>new one aimed at advanced graphics</strong>.
+										
+									</p>
+									<ol class="work-technologies">
+										<li>OpenGL</li>
+										<li>Visual Studio</li>
+									</ol>
+									<div class="work-links">
+										<a href="https://github.com/xdavido/UnhookedEngine.v3" target="_blank" rel="noopener" title="GitHub">
+											<img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+										</a>
+										
+									</div>
+								</div>
+								<video class="work-img" poster="assets/images/work/unhooked.png" autoplay muted loop playsinline>
+									<source src="assets/videos/unhooked.mp4" type="video/mp4">
+								</video>
+							</div>
+							
+						</div>
+						
+						<!-- Characters Category -->
+						<div class="category-section">
+							<h2 class="h2">3D Characters & Creatures</h2>
+							
+							<!-- NeoPrince -->		
+							<div class="work-box">
+								<div class="work-textbox">
+									<h3 class="h3">Neomorph Prince</h3>
+									<p class="work-text">
+										
+										I present to you this <strong>cinematic model concept</strong> of a "Neomorph Prince", a half-xenomorph, half-neomorph creature. Inspired by Jared Chavez's videos, I decided to <strong>revisit one of the pieces</strong> I had created for a <strong>previous project</strong>, which had a <strong>stylized comic style</strong>, and bring it <strong>into realism</strong>.
+									</p>
+									<ol class="work-technologies">
+										<li>ZBursh</li>
+										<li>Substance Painter</li>
+										<li>Blender</li>
+									</ol>
+									<div class="work-links">
+										<a href="https://www.artstation.com/artwork/xDEbvO" target="_blank" rel="noopener" title="ArtStation">
+											<img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
+										</a>
+									</div>
+								</div>
+								<video class="work-img" poster="assets/images/work/neoprince.png" autoplay muted loop playsinline>
+									<source src="assets/videos/neoprince.mp4" type="video/mp4">
+								</video>
+							</div>
+							
+							<!-- Kodama -->		
+							<div class="work-box">
+								<div class="work-textbox">
+									<h3 class="h3">Mushroom Kodama</h3>
+									<p class="work-text">
+										This is my version of the legendary <strong>Japanese creature </strong>Kodama, bringing to life its mystical essence through <strong>detailed modeling and subtle texturing</strong>. I also explored its <strong>surrounding environment</strong>, using <strong>Blender Geometry Nodes</strong> to create a natural <strong>landscape</strong> that embraces it like home.						</p>
+										<ol class="work-technologies">
+											<li>ZBursh</li>
+											<li>Maya</li>
+											<li>Substance Painter</li>
+											<li>Blender</li>
+										</ol>
+										<div class="work-links">
+											<a href="https://www.artstation.com/artwork/m8N4mY" target="_blank" rel="noopener" title="ArtStation">
+												<img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
+											</a>
+										</div>
+									</div>
+									<picture class="work-img">
+										<img loading="lazy" src="assets/images/work/kodama.png" alt="Kodama" />
+									</picture>
+								</div>
+								
+								<!-- Saltpeter -->		
+								<div class="work-box">
+									<div class="work-textbox">
+										<h3 class="h3">Salt-Peter the Alchemist</h3>
+										<p class="work-text">
+											Made it during the <strong>14 days</strong> Pirate Software <strong>Jam</strong> 2024 for <strong>browser</strong>.
+											Meet Salt-Peter, an alchemist that got robbed his precious philosopher's stone amongst other useful magical items and has to get them back from the shadow world.	  <ol class="work-technologies">
+												<li>Substance Painter</li>
+												<li>Blender</li>
+											</ol>
+											<div class="work-links">
+												<a href="https://www.artstation.com/artwork/1NxP9K" target="_blank" rel="noopener" title="ArtStation">
+													<img src="assets/images/social-links/artstation.svg" alt="ArtStation" loading="lazy" />
+												</a>
+												<a href="https://xarderos.itch.io/salt-peter" target="_blank" rel="noopener" title="itchio">
+													<img src="assets/images/social-links/itchio.svg" alt="itchio" loading="lazy" />
+												</a>
+											</div>
+										</div>
+										<picture class="work-img">
+											<img loading="lazy" src="assets/images/work/saltpeter.png" alt="Saltpeter" />
+										</picture>
+									</div>
+									
+									
+								</div>
+							</div>
+						</section>
+						
+						<!-- Experience Section - Detailed Boxes -->
+						<section class="experience" id="experience">
+							<div class="container">
+								<h1 class="title-section">EXPERIENCE</h1>
+								
+								<!-- Experience 1 -->
+								<a href="https://www.3cat.cat/3cat/" target="_blank" class="education-link">
+									<div class="experience-box">
+										<!-- Header Section with Logo and Basic Info -->
+										<div class="experience-header">
+											<div class="experience-logo">
+												<img loading="lazy" src="assets/images/experience/3cat.png" alt="3CAT" />
+											</div>
+											<div class="experience-title-container">
+												<div class="experience-title-row">
+													<h3 class="experience-position">Technical Artist</h3>
+													<span class="experience-type-badge">Service-based Internship</span>
+												</div>
+												<p class="experience-company">3CAT Corp</p>
+												<div class="experience-meta">
+													<span class="experience-duration">
+														<img src="assets/images/icons/calendar.svg" alt="Duration" class="meta-icon">
+														September 2024 - March 2025 (7 months)
+													</span>
+													<span class="experience-location">
+														<img src="assets/images/icons/location.svg" alt="Location" class="meta-icon">
+														On-site / Barcelona, Spain
+													</span>
+												</div>
+											</div>
+										</div>
+										
+										<!-- Main Content Section -->
+										<div class="experience-content">
+											<!-- Responsibilities Section -->
+											<div class="experience-section">
+												<p> Collaborative university-contract project with 3Cat, focused on developing innovative solutions to promote news consumption among young audiences.</p>
+												
+												<ul class="experience-description">
+													<li class="experience-bullet">
+														<span class="bullet-icon">▹</span>
+														Created a complete immersive experience prototype ready for testing
+													</li>
+													<li class="experience-bullet">
+														<span class="bullet-icon">▹</span>
+														Developed shaders, VFX, and post-processing effects
+													</li>
+													<li class="experience-bullet">
+														<span class="bullet-icon">▹</span>
+														Facilitated collaboration between art and programming departments
+													</li>
+												</ul>
+											</div>
+											
+											<!-- Technologies Section -->
+											<div class="experience-section">
+												<h4 class="experience-section-title">
+													
+													Technologies Used
+												</h4>
+												<div class="experience-tech-tags">
+													<span class="tech-tag">Unity 6</span>
+													<span class="tech-tag">VFX Graph</span>
+													<span class="tech-tag">Shader Graph</span>
+													<span class="tech-tag">VR</span>
+													<span class="tech-tag">Maya</span>
+													<span class="tech-tag">Substance Painter</span>
+												</div>
+											</div>			
+										</div>
+									</div>
+								</a>
+								
+							</div>
+						</div>
+					</section>
+					
+					<!-- Skills Section - Updated for Technical Artist -->
+					<section class="skills" id="skills">
+						<div class="container">
+							<h1 class="title-section">TOOLKIT</h1>
+							
+							<!-- Software Skills -->
+							<div class="category-section">  
+								<img src="assets/images/skills/Softwares.png" alt="Unity" class="img" loading="lazy" title="Softwares">
+							</div>
+							
+							<!-- Software Skills -->
+							<div class="category-section">  
+								<img src="assets/images/skills/Languages.png" alt="Unity" class="img" loading="lazy" title="Code Languages">
+							</div>
+							
+						</div>
+					</section>
+					
+					
+					<!-- GAMEJAMS Section - Updated for Technical Artist -->
+					<section class="jams" id="jams">
+						<div class="container">
+							<h1 class="title-section">GAMEJAMS</h1>
+							
+							<div class="games-container">
+								
+								<!-- SPIRAL -->
+								<a href="https://xarderos.itch.io/spiral" target="_blank" class="game-link">
+									<div class="game-box">
+										<span class="award-badge">
+											<img src="assets/images/icons/award.svg" alt="Award" class="award-icon">
+											Best Art Award
+										</span>
+										<div class="game-jam">8th Grand CITM Game Jam</div>
+										<div class="game-year">2025</div>
+										<img src="assets/images/jams/Spiral.png" alt="Spiral" class="game-image">
+										<div class="game-info">
+											<h3 class="game-title">Spiral</h3>
+											<p class="game-description">
+												Spiral is a psychological roguelike about the gambling addiction, 
+												where every shortcut has lasting consequences.
+											</p>
+										</div>
+									</div>
+								</a>
+								
+								<!-- PARAULES A MIDA -->
+								<a href="https://xarderos.itch.io/paraules-a-mida" target="_blank" class="game-link">
+									<div class="game-box">
+										<div class="game-jam">2nd Premis Ludi</div>
+										<div class="game-year">2024</div>
+										<img src="assets/images/jams/Mida.png" alt="Paraules a Mida" class="game-image">
+										<div class="game-info">
+											<h3 class="game-title">Paraules a Mida</h3>
+											<p class="game-description">
+												Step into the magical shop where words are crafted to perfection!
+											</p>
+										</div>
+									</div>
+								</a>
+								
+								<!-- SALT PETER -->
+								<a href="https://xarderos.itch.io/salt-peter" target="_blank" class="game-link">
+									<div class="game-box">
+										<span class="award-badge">Top 25/2500</span>
+										<div class="game-jam">15th Pirate Software Game Jam</div>
+										<div class="game-year">2024</div>
+										<img src="assets/images/jams/Peter.png" alt="SaltPeter" class="game-image">
+										<div class="game-info">
+											<h3 class="game-title">Salt-Peter and The Philosopher's Stone</h3>
+											<p class="game-description">
+												Retrieve Salt-Peter's most precious possession: the Philosopher's Stone!
+											</p>
+										</div>
+									</div>
+								</a>
+								
+								<!-- THANKS MONSTER -->
+								<a href="https://xaita09.itch.io/thanksmonster" target="_blank" class="game-link">
+									<div class="game-box">
+										<span class="award-badge">
+											<img src="assets/images/icons/award.svg" alt="Award" class="award-icon">
+											Best Art Award
+										</span>
+										<div class="game-jam">7th Grand CITM Game Jam</div>
+										<div class="game-year">2024</div>
+										<img src="assets/images/jams/Monster.png" alt="Thanks, Monster!" class="game-image">
+										<div class="game-info">
+											<h3 class="game-title">Thanks, Monster!</h3>
+											<p class="game-description">
+												A very special platformer with amazing art, a lot of different mechanics and a funny and interesting narrative.
+											</p>
+										</div>
+									</div>
+								</a>
+								
+								<!-- MIND'S RESONANCE -->
+								<a href="https://dexuxa.itch.io/minds-resonance" target="_blank" class="game-link">
+									<div class="game-box">
+										<span class="award-badge">
+											<img src="assets/images/icons/award.svg" alt="Award" class="award-icon">
+											Best Game Award
+										</span>
+										<div class="game-jam">6th Grand CITM Game Jam</div>
+										<div class="game-year">2023</div>
+										<img src="assets/images/jams/Minds.png" alt="Mind's Resonance" class="game-image">
+										<div class="game-info">
+											<h3 class="game-title">Mind's Resonance</h3>
+											<p class="game-description">
+												An action video game where we aimed to understand the echo as the idea of internal mental echoes.
+											</p>
+										</div>
+									</div>
+								</a>
+								
+							</div>
+						</div>
+					</section>
+					
+					
+					
+					
+					
+					<!-- Contact Section -->
+					<section class="contact" id="contact">
+						<div class="container">
+							<h2 class="h2">Get In Touch</h2>
+							<div class="contact-content">
+								<div class="contact-textbox">
+									
+									<p class="contact-text">
+										Interested in working together or have questions about my work? 
+										Feel free to reach out for collaborations, job opportunities, 
+										or just to chat about technical art and game development.
+									</p>
+									<strong href="#" class="hire-alert">
+										<span class="indicator"></span>
+										Available for opportunities
+									</strong>
+									<div class="contact-info">
+										<p><strong>Email:</strong> 
+											<a href="mailto:davidruizluengo@gmail.com" class="email-link">
+												davidruizluengo@gmail.com
+											</a>
+										</p>
+										<p><strong>Location:</strong> Murcia, Spain <span class="relocation-badge">Relocation available</span> </p>
+										
+									</div>
+								</div>
+								
+								<!-- <form action="#" class="contact-form" netlify> -->
+									<!-- <div class="form-field"> -->
+										<!-- <label for="name">Name</label> -->
+										<!-- <input type="text" name="name" id="name" required /> -->
+									<!-- </div> -->
+									<!-- <div class="form-field"> -->
+										<!-- <label for="email">Email</label> -->
+										<!-- <input type="email" name="email" id="email" required inputmode="email" /> -->
+									<!-- </div> -->
+									<!-- <div class="form-field"> -->
+										<!-- <label for="message">How can I help you?</label> -->
+										<!-- <textarea name="message" id="message" required></textarea> -->
+									<!-- </div> -->
+									<!-- <button type="submit" class="btn btn-cta">Send Message</button> -->
+								<!-- </form> -->
+							</div>
+						</div>
+					</section>
+				</main>
+				
+				<footer class="footer">
+					<div class="container">
+						<div class="footer-content">
+							<nav>
+								<ol class="footer-links">
+									<li class="footer-link">
+										<a title="ArtStation" href="https://www.artstation.com/luengox" target="_blank" rel="noopener">
+											<img loading="lazy" src="assets/images/social-links/artstation.svg" alt="ArtStation" />
+										</a>
+									</li>
+									<li class="footer-link">
+										<a title="GitHub" href="https://github.com/xdavido" target="_blank" rel="noopener">
+											<img loading="lazy" src="assets/images/social-links/github.svg" alt="GitHub" />
+										</a>
+									</li>
+									<li class="footer-link">
+										<a title="LinkedIn" href="https://linkedin.com/in/david-ruiz-luengo-954401239" target="_blank" rel="noopener">
+											<img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="LinkedIn" />
+										</a>
+									</li>
+									<li class="game-link">
+										<a title="Itchio" href="https://xdavido.itch.io/" target="_blank" rel="noopener">
+											<img loading="lazy" src="assets/images/social-links/itchio.svg" alt="Itchio" />
+										</a>
+									</li>
+								</ol>
+							</nav>
+							<p class="footer-text">
+								&copy; <span>2024</span> David Ruiz Luengo | Junior Technical Artist
+							</p>
+							<label class="theme-switch" for="theme-switch">
+								<span>Dark Theme</span>
+								<input type="checkbox" id="theme-switch" role="switch"/>
+							</label>
+						</div>
+					</div>
+				</footer>
+			</body>
+			</html>
