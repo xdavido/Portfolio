@@ -510,12 +510,12 @@ main {
 /* Fondos según modo */
 body.dark .header::before {
   background-image: linear-gradient(#00000050, #000000da),
-    url("assets/images/fondo.jpg");
+    url("assets/images/fondo.png");
 }
 
 body.light .header::before {
   background-image: linear-gradient(#ffffff34, #ffffffd0),
-    url("assets/images/fondo.jpg");
+    url("assets/images/fondo.png");
 }
 
 
